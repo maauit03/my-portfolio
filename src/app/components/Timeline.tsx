@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion } from 'motion/react';
+import { useInView } from 'motion/react';
 
 type TimelineItem = {
     company: string;
@@ -89,11 +89,11 @@ export default function Timeline() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-violet-500 mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-red-700 mb-12 text-center">
           Work Experience
         </h2>
 
-        <div className="relative border-l-2 border-violet-500 pl-6 sm:pl-10 space-y-20">
+        <div className="relative border-l-2 border-red-700 pl-6 sm:pl-10 space-y-20">
           {timelineData.map((item, index) => (
             <TimelineItemCard key={index} item={item} />
           ))}
@@ -121,8 +121,8 @@ function TimelineItemCard({ item }: { item: TimelineItem }) {
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className="relative"
     >
-      <h3 className="text-xl sm:text-2xl font-semibold text-violet-500">{item.title}</h3>
-      <span className="block text-sm text-violet-400 mt-1">{item.time}</span>
+      <h3 className="text-xl sm:text-2xl font-semibold text-red-700">{item.title}</h3>
+      <span className="block text-sm text-red-700 mt-1">{item.time}</span>
 
       <div className="mt-3 space-y-2">
         {Array.isArray(item.description)
@@ -133,7 +133,7 @@ function TimelineItemCard({ item }: { item: TimelineItem }) {
                   initial={{ opacity: 0, y: 10 }}
                   animate={animateIn ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: (i * 0.3) + j * 0.1, duration: 0.4 }}
-                  className="ml-4 text-green-300 text-base sm:text-lg leading-snug"
+                  className="ml-4 text-cyan-300 text-base sm:text-lg leading-snug"
                 >      
                 {line}
                 </motion.li>
@@ -145,7 +145,7 @@ function TimelineItemCard({ item }: { item: TimelineItem }) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={animateIn ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="text-green-300 text-base sm:text-lg leading-snug"
+                className="text-cyan-300 text-base sm:text-lg leading-snug"
             >
                 {line}
               </motion.p>

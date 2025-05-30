@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {words} from '../constants/index.js'
+import Path from '../components/Path';
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -14,12 +15,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <div className="hero-layout">
-        <header className="flex flex-col justify-center w-screen md:w-full md:px-20 px-5">
-          <div className="flex flex-col gap-7">
+    <section id="hero" className="relative overflow-hidden ">
+      <div className="hero-layout max-w-5xl mx-auto ">
+        <header className="flex flex-col justify-center md:w-full md:px-20 px-5">
+          <div className="flex flex-col">
+            <Path/>
             <div className="hero-text">
-            <h1 className="flex items-center gap-3 h-32 text-green-300">
+            <h1 className="flex items-center gap-3 mb-8 text-cyan-300">
             Ready to maximize Stakeholder value in
                 <span className="inline-block">
                   <AnimatePresence mode="wait">
@@ -29,7 +31,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="flex items-center gap-2 text-violet-600"
+                    className="flex items-center gap-2 text-red-600"
                     >
                       <img
                         src={words[index].imgPath}
