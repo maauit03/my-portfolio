@@ -19,7 +19,6 @@ const Hero = () => {
       <div className="hero-layout max-w-5xl mx-auto ">
         <header className="flex flex-col justify-center md:w-full md:px-20 px-5">
           <div className="flex flex-col">
-            <Path/>
             <div className="hero-text">
             <h1 className="flex items-center gap-3 mb-8 text-cyan-300">
             Ready to maximize Stakeholder value in
