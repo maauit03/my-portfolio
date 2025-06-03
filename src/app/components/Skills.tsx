@@ -1,9 +1,7 @@
-import React from 'react'
+import { div } from "motion/react-client";
 
-const Skills = () => {
+export default function MartinAuGoldHero() {
   return (
-    <div>Skills</div>
-  )
+    <div>SKILLS</div>
+  );
 }
-
-export default Skills

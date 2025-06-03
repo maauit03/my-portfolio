@@ -3,20 +3,19 @@
 import { OrbitControls } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-
+import {Goldbar} from './Goldbar'
 const Hologram = () => {
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-        <ambientLight intensity={0.2} color="#1a1a40"></ambientLight>
-        <directionalLight position={[5,5,5]} intensity={3} />
+    <Canvas className='w-full h-full' camera={{ position: [10, 5, 10], fov: 10 }}>
+        <ambientLight intensity={0.5} color="#1a1a40"></ambientLight>
+        <directionalLight position={[5,5,3]} intensity={10} />
+        <directionalLight position={[-5,-5,-3]} intensity={10} />
+
         <OrbitControls
         enablePan={false}
         enableZoom={false}
         />
-        <mesh>
-            <boxGeometry args={[4,4,4]}/>
-            <meshStandardMaterial color="grey"/>
-        </mesh>
+        <Goldbar/>
     </Canvas>
   )
 }

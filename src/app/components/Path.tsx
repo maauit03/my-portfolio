@@ -67,7 +67,7 @@ export default function Path() {
         <motion.line x1="380" y1="100" x2="380" y2="200" stroke="#FFD700" variants={draw} custom={2.1} style={shape} />
         <motion.line x1="380" y1="200" x2="420" y2="200" stroke="#FFD700" variants={draw} custom={2.2} style={shape} />
         <motion.line x1="420" y1="200" x2="420" y2="100" stroke="#FFD700" variants={draw} custom={2.3} style={shape} />
-        <motion.line x1="300" y1="220" x2="440" y2="220" stroke="#FFD700" variants={draw} custom={2.3} style={shape} />
+        <motion.line x1="310" y1="220" x2="440" y2="220" stroke="#FFD700" variants={draw} custom={2.3} style={shape} />
 
       </motion.svg>
 
