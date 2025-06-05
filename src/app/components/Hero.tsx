@@ -19,8 +19,16 @@ const Hero = () => {
       <div className="hero-layout max-w-5xl mx-auto ">
         <header className="flex flex-col justify-center md:w-full md:px-20 px-5">
           <div className="flex flex-col">
+          <motion.h1
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
+            className="text-white text-xl md:text-4xl font-semibold tracking-widest"
+          >
+            HELLO WORLD
+          </motion.h1>
             <div className="hero-text">
-            <h1 className="flex items-center gap-3 mb-8 text-cyan-300">
+            <h1 className="flex items-center gap-3 text-yellow-300">
             Ready to maximize Stakeholder value in
                 <span className="inline-block">
                   <AnimatePresence mode="wait">
@@ -41,8 +49,8 @@ const Hero = () => {
                   </AnimatePresence>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1></h1>
+              <h1></h1>
             </div>
           </div>
         </header>

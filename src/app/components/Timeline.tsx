@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
-import { timelineData, TimelineItem } from '../constants/work_xp';
+import { timelineData_work, timelineData_education, TimelineItem } from '../constants/work_xp';
 
 // Utility to split long strings into sentences
 function splitTextIntoLines(text: string): string[] {
@@ -13,12 +13,19 @@ function splitTextIntoLines(text: string): string[] {
     .map(line => (line.trim().endsWith('.') ? line.trim() : line.trim() + '.'));
 }
 
-export default function Timeline() {
+type TimelineProps = {
+  type: 'work' | 'education';
+};
+
+export default function Timeline({ type }: TimelineProps) {
+  const timelineData =
+    type === 'work' ? timelineData_work : timelineData_education;
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-yellow-300 mb-12 text-center">
-          Work Experience
+          {type === 'work' ? 'Work Experience' : 'Education'}
         </h2>
 
         <div className="relative border-l-2 border-yellow-300 pl-6 sm:pl-10 space-y-20">
@@ -50,6 +57,8 @@ function TimelineItemCard({ item }: { item: TimelineItem }) {
       className="relative"
     >
       <h3 className="text-xl sm:text-2xl font-semibold text-yellow-300">{item.title}</h3>
+
+      <h3 className="block text-xl text-yellow-300 mt-1">{item.company}</h3>
       <span className="block text-sm text-yellow-300 mt-1">{item.time}</span>
 
       <div className="mt-3 space-y-2">
