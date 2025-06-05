@@ -7,7 +7,20 @@ export type TimelineItem = {
     description: string[] | string;
 };
 
-export const timelineData: TimelineItem[] = [
+export const timelineData_education: TimelineItem[] = [
+  {
+    company: 'University of Applied Sciences Esslingen',
+    title: 'Bachelor of Engineering ',
+    time: '2020 – 2024',
+    description: [
+      "major: media computer science",
+      "final grade: 1,7",
+      "2023 semester abroad: Kanagawa, Japan"
+    ]
+  },
+]
+
+export const timelineData_work: TimelineItem[] = [
   {
     company: 'adesso SE',
     title: 'Bachelor’s Thesis/Working Student as Software Developer',
@@ -29,45 +42,6 @@ export const timelineData: TimelineItem[] = [
       "Development of a Jenkins pipeline for automated deployment in Groovy",
       "Proof of concept and implementation of a shared library in Java",
       "Support in a customer project with agile software development (Scrum)"
-    ]
-  },
-  {
-    company: 'adesso SE',
-    title: 'Bachelor’s Thesis/Working Student as Software Developer',
-    time: '2023 – Present',
-    description: [
-      "Training and fine-tuning of a Large Language Model on a self-created dataset.",
-      "Integration of the AI model into a Spring Backend, Deployment of the AI model in Azure.",
-      "Implementation of the functional model in the internal employee management program."
-    ]
-  },
-  {
-    company: 'adesso SE',
-    title: 'Bachelor’s Thesis/Working Student as Software Developer',
-    time: '2023 – Present',
-    description: [
-      "Training and fine-tuning of a Large Language Model on a self-created dataset.",
-      "Integration of the AI model into a Spring Backend, Deployment of the AI model in Azure.",
-      "Implementation of the functional model in the internal employee management program."
-    ]
-  },
-  {
-    company: 'adesso SE',
-    title: 'Bachelor’s Thesis/Working Student as Software Developer',
-    time: '2023 – Present',
-    description: [
-      "Training and fine-tuning of a Large Language Model on a self-created dataset.",
-      "Integration of the AI model into a Spring Backend, Deployment of the AI model in Azure.",
-      "Implementation of the functional model in the internal employee management program."
-    ]
-  },  {
-    company: 'adesso SE',
-    title: 'Bachelor’s Thesis/Working Student as Software Developer',
-    time: '2023 – Present',
-    description: [
-      "Training and fine-tuning of a Large Language Model on a self-created dataset.",
-      "Integration of the AI model into a Spring Backend, Deployment of the AI model in Azure.",
-      "Implementation of the functional model in the internal employee management program."
     ]
   },
 
