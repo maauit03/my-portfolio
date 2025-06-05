@@ -2,7 +2,6 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import Path from "./Path";
-import { useRef } from 'react';
 
 export default function Navbar() {
   const [expanded, setExpanded] = useState(true);

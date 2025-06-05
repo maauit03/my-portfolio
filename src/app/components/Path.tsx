@@ -101,11 +101,3 @@ const dash: React.CSSProperties = {
   opacity:         0.7,
   strokeWidth:     1.5,
 }
-
-const detail: React.CSSProperties = {
-  ...shape,
-  strokeDasharray: '2 2',
-  stroke:          '#ffffff',
-  opacity:         0.4,
-  strokeWidth:     1,
-}

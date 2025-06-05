@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {words} from '../constants/index.js'
-import Path from '../components/Path';
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -41,6 +40,7 @@ const Hero = () => {
                     className="flex items-center gap-2 text-red-600"
                     >
                       <img
+                        alt='sample'
                         src={words[index].imgPath}
                         className="w-10 h-10 p-2 rounded-full bg-[var(--color-white-50)]"
                       />

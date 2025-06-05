@@ -1,8 +1,8 @@
 'use client';
 
 import { OrbitControls } from '@react-three/drei';
-import { Canvas, useThree } from '@react-three/fiber'
-import React, { useRef, useEffect, useState } from 'react'
+import { Canvas } from '@react-three/fiber'
+import React, { useRef } from 'react'
 import { Goldbar } from './Goldbar'
 
 const Hologram = () => {

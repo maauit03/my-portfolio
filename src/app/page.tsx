@@ -1,14 +1,11 @@
 'use client'
-import { useRef } from 'react';
 import AboutMe from './components/AboutMe';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
 import Timeline from './components/Timeline';
 import Contact from './components/Contact';
+import { SkillsSection } from './components/Skills';
 export default function Home() {
-    const skillsRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <main>
@@ -29,7 +26,7 @@ export default function Home() {
   </div>
 
   <div id="skills" className="scroll-mt-24">
-    <Skills />
+    <SkillsSection />
   </div>
 
   <div id="education" className="scroll-mt-24">

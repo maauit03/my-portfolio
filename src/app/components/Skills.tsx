@@ -26,9 +26,9 @@ function SkillCategory({ title, items }: SkillCategoryProps) {
   );
 }
 
-const SkillsSection = React.forwardRef<HTMLDivElement>((_, ref) => {
+export function SkillsSection() {
   return (
-    <section ref={ref} className="py-16 px-6 bg-zinc-900 text-white">
+    <section className="py-16 px-6 bg-zinc-900 text-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl text-yellow-300 font-bold text-center mb-12">
           Skills
@@ -41,6 +41,5 @@ const SkillsSection = React.forwardRef<HTMLDivElement>((_, ref) => {
       </div>
     </section>
   );
-});
+}
 
-export default SkillsSection;
