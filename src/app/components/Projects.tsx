@@ -30,8 +30,8 @@ const mediaFiles: MediaItem[] = [
     type: "video",
     title: "ChitChat",
     thumbnail: "/images/ChitChatThumbnail.JPG",
-    description: "ChitChat is a browser app to chitchat with other students. Made by a group of students for students",
-    technology: "Svelte",
+    description: "ChitChat is a browser app to chitchat with other students. Made by a group of students for students.\n the ad was produced by myself",
+    technology: "Svelte, Adobe Premiere Pro and After Effects",
     link: "https://dev--stunning-lamington-9f7df4.netlify.app/",
   },
   {
