@@ -24,7 +24,7 @@ export const timelineData_work: TimelineItem[] = [
   {
     company: 'adesso SE',
     title: 'Bachelor’s Thesis/Working Student as Software Developer',
-    time: '2023 – Present',
+    time: '2024 – 2024',
     description: [
       "Training and fine-tuning of a Large Language Model on a self-created dataset.",
       "Integration of the AI model into a Spring Backend, Deployment of the AI model in Azure.",
